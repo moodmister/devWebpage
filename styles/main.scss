@@ -1,0 +1,39 @@
+@import "globals";
+@import "variables";
+@import "nav";
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-size: 1.125rem;
+    color: $dt_font;
+    background-color: $dt_bg;
+}
+h1{
+    font-size: 5rem;
+}
+.flex {
+    display: flex;
+    &-jc-c{
+        justify-content: center;
+    }
+    &-ai-c {
+    align-items: center;
+    }
+}
+
+.headings {
+    border-left: solid 2px $dt_font;
+    margin: 25px;
+    padding: 0 20px;
+}

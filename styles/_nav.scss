@@ -1,0 +1,31 @@
+nav {
+    width: 100%;
+    font-size: 100%;
+    text-align: center;
+    background-color: #00397e;
+}
+
+.nav{
+    margin: 0;
+    width: 100%;
+}
+
+.navbar {
+    height: 50px;
+}
+
+.nav-item {
+    height:100%;
+    width: 18vw;
+    padding: 10px 0;
+}
+
+.nav-item:hover{
+    background-color: #002047;
+    transition: 0.5s;
+}
+
+.nav-item a {
+    color: $dt_font;
+    text-decoration: none;
+}
