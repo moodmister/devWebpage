@@ -1,0 +1,26 @@
+@import "variables";
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-size: 1.125rem;
+    color: $dt_font;
+    background-color: $dt_bg;
+    transition: 0.5s;
+}
+
+.lightMode {
+    color: $lt_font;
+    background-color: $lt_bg;
+    transition: 0.5s;
+}

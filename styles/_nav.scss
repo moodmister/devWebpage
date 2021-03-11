@@ -1,31 +1,94 @@
 nav {
     width: 100%;
-    font-size: 100%;
-    text-align: center;
-    background-color: #00397e;
-}
-
-.nav{
-    margin: 0;
-    width: 100%;
-}
-
-.navbar {
     height: 50px;
+    background-color: $dt_navbg;
+
+    .navbar-items {
+        height: 100%;
+    }
+
+    .nav-item {
+        height: 50px;
+        width: 18vw;
+        padding: 10px 0;
+    }
+
+    .nav-item:hover{
+        background-color: #0073ff;
+        color: $lt_font;
+        transition: 0.5s;
+    }
+
+    a {
+        font-weight: 400;
+        text-decoration: none;
+        color: $dt_font;
+    }
+
+    .hamburger-menu {
+        display: none;
+        float: right;
+        margin: 0.625rem 1.5rem;
+        > span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            margin: 5px 1px;
+            background-color: white;
+        }
+    }
+    
+    @media screen and (max-width: 640px) {
+        .navbar-items {
+            display: none
+        }
+        .hamburger-menu {
+            display: block;
+        }
+    }
 }
 
-.nav-item {
-    height:100%;
-    width: 18vw;
-    padding: 10px 0;
+.mobile-nav {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    width: 35vw;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: $dt_navbg;
+    text-align: center;
+    a {
+        font-weight: 400;
+        text-decoration: none;
+        margin: 1rem;
+        color: $dt_font;
+    }
 }
 
-.nav-item:hover{
-    background-color: #002047;
+.lightMode-nav {
+    background-color: $lt_navbg;
+    color: $lt_font;
+    transition: 0.5;
+}
+
+.lightMode-nav a{
+    color: $lt_font;
     transition: 0.5s;
 }
 
-.nav-item a {
-    color: $dt_font;
-    text-decoration: none;
+.lightMode #mobile-menu {
+    background-color: $lt_navbg;
+    color: $lt_font;
+    transition: 0.5s;
+}
+
+.lightMode #mobile-menu a{
+    color: $lt_font;
+    transition: 0.5s;
+}
+
+.lightMode-nav .hamburger-menu > span {
+    background-color: black;
+    transition: 0.5s;
 }

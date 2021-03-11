@@ -7,23 +7,50 @@
     <title>Valentin Stoyanov</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/54fa9535b9.js" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
     <style>
         body {
-            font-family: 'Balsamiq Sans', cursive;
+            font-family: 'Source Code Pro';
+            font-weight: 200;
         }
     </style>
 </head>
-<body>
-    <nav class="nav">
-        <div class="navbar flex flex-jc-c flex-ai-c">
-            <div class="nav-item flex flex-jc-c flex-ai-c"><a href="#">Home</a></div>
-            <div class="nav-item flex flex-jc-c flex-ai-c"><a href="#">Skills</a></div>
-            <div class="nav-item flex flex-jc-c flex-ai-c"><a href="#">Projects</a></div>
-            <div class="nav-item flex flex-jc-c flex-ai-c"><a href="#">About me</a></div>
-            <div class="nav-item flex flex-jc-c flex-ai-c"><a href="#">Contacts</a></div>
+<body id="body">
+
+    
+    <nav id="nav">
+        <div class="nav">
+            <div class="navbar-items">
+                <div class="navbar flex flex-jc-sb flex-ai-c">
+                    <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Home</div></a>
+                    <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Skills</div></a>
+                    <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Projects</div></a>
+                    <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">About me</div></a>
+                    <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Contacts</div></a>
+                    <div class="toggle-dm nav-item flex flex-jc-c flex-ai-c" id="dark-mode" onclick="DarkModeToggle()"><i id="moon" class="fas fa-moon" style="display: none;"></i><i id="sun" class="fas fa-sun"></i></div>
+                </div>
+            </div>
+            <div class="hamburger-menu flex-jc-e" onclick="ShowMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
+    <div class="mobile-nav" id="mobile-menu">
+        <div class="mobile-links">
+            <a href="#"><div class="mobile-link">Home</div></a>
+            <a href="#"><div class="mobile-link">Skills</div></a>
+            <a href="#"><div class="mobile-link">Projects</div></a>
+            <a href="#"><div class="mobile-link">About me</div></a>
+            <a href="#"><div class="mobile-link">Contacts</div></a>
+            <div class="toggle-dm mobile-link" onclick="DarkModeToggle()"><i style="display: none;" class="fas fa-moon"></i><i class="fas fa-sun"></i></div>
+        </div>
+    </div>
+
+
     <div class="headings">
         <h1>Valentin Stoyanov</h1>
         <h2>Web Design and creative illustrator</h2>

@@ -2,26 +2,7 @@
 @import "variables";
 @import "nav";
 
-html {
-    font-size: 100%;
-    box-sizing: border-box;
-}
 
-*, *::before, *::after {
-    font-size: 100%;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    margin: 0;
-    font-size: 1.125rem;
-    color: $dt_font;
-    background-color: $dt_bg;
-}
-h1{
-    font-size: 5rem;
-}
 .flex {
     display: flex;
     &-jc-c{
@@ -30,10 +11,47 @@ h1{
     &-ai-c {
     align-items: center;
     }
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-e{
+        justify-content: end;
+    }
 }
 
 .headings {
-    border-left: solid 2px $dt_font;
+    border-left: solid 2px;
     margin: 25px;
     padding: 0 20px;
+}
+
+h1{
+    font-size: 6rem;
+    font-weight: 200;
+}
+
+// Media Queries
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3.75rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 2rem;
+    }
 }
