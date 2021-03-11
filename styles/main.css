@@ -167,9 +167,16 @@ nav .hamburger-menu > span {
   padding: 0 20px;
 }
 
+.headings h1, .headings h2 {
+  font-weight: 200;
+}
+
 h1 {
   font-size: 6rem;
-  font-weight: 200;
+}
+
+h2 {
+  font-size: 3.25rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -182,17 +189,26 @@ h1 {
   h1 {
     font-size: 3.75rem;
   }
+  h2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
   h1 {
     font-size: 3.5rem;
   }
+  h2 {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
   h1 {
     font-size: 2rem;
+  }
+  h2 {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
