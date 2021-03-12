@@ -19,14 +19,17 @@
     }
 }
 
+.container {
+  height: 100vh;
+}
 
 .headings {
-    border-left: solid 2px;
-    margin: 25px;
-    padding: 0 20px;
-    h1, h2 {
-        font-weight: 200;
-    }
+  border-left: solid 2px;
+  margin: 1.725rem;
+  padding: 0 20px;
+  h1, h2 {
+      font-weight: 200;
+  }
 }
 
 h1{
@@ -34,6 +37,15 @@ h1{
 }
 h2 {
     font-size: 3.25rem;
+}
+
+// .container {
+  
+// }
+
+.paragraph {
+  margin: 1.5rem;
+  text-align: justify;
 }
 
 

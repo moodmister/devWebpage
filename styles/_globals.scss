@@ -1,26 +1,33 @@
 @import "variables";
 
 html {
-    font-size: 100%;
-    box-sizing: border-box;
+  height: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-    font-size: 100%;
-    box-sizing: border-box;
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    margin: 0;
-    font-size: 1.125rem;
-    color: $dt_font;
-    background-color: $dt_bg;
-    transition: 0.5s;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 1.125rem;
+  color: $dt_font;
+  background-image: linear-gradient(to bottom right, $dt_bg2, $dt_bg1, $dt_bg1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  transition: 0.5s;
 }
 
 .lightMode {
     color: $lt_font;
+    background-image: none;
     background-color: $lt_bg;
     transition: 0.5s;
 }
