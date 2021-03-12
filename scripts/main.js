@@ -36,3 +36,9 @@ function DarkModeToggle() {
         moon[1].style.display = "none";
     }
 }
+
+function ScrollTo(point) {
+    var vpheight = window.innerHeight;
+    console.log(vpheight * point);
+    window.scrollTo(0, vpheight * point);
+}

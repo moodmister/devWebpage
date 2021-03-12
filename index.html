@@ -24,8 +24,8 @@
                 <div class="navbar flex flex-jc-sb flex-ai-c">
                     <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Home</div></a>
                     <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">About me</div></a>
-                    <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Projects</div></a>
                     <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Skills</div></a>
+                    <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Projects</div></a>
                     <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Contacts</div></a>
                     <div class="toggle-dm nav-item flex flex-jc-c flex-ai-c" id="dark-mode" onclick="DarkModeToggle()"><i id="moon" class="fas fa-moon" style="display: none;"></i><i id="sun" class="fas fa-sun"></i></div>
                 </div>
@@ -40,9 +40,9 @@
     <div class="mobile-nav" id="mobile-menu">
         <div class="mobile-links">
             <a href="#"><div class="mobile-link">Home</div></a>
-            <a href="#"><div class="mobile-link">About me</div></a>
-            <a href="#"><div class="mobile-link">Projects</div></a>
+            <a href="#" onclick="ScrollTo(1)"><div class="mobile-link">About me</div></a>
             <a href="#"><div class="mobile-link">Skills</div></a>
+            <a href="#"><div class="mobile-link">Projects</div></a>
             <a href="#"><div class="mobile-link">Contacts</div></a>
             <div class="toggle-dm mobile-link" onclick="DarkModeToggle()"><i style="display: none;" class="fas fa-moon"></i><i class="fas fa-sun"></i></div>
         </div>
@@ -54,10 +54,15 @@
         <h2>Web Design and creative illustrator</h2>
     </div>
   </div>
-    <div class="container flex flex-ai-c paragraph">
-      <div class="about-me">
-        <p>Who am I? Oh, well ...</p>
-      </div>
+  <div class="container flex flex-ai-c paragraph">
+    <div class="about-me">
+      <p>Who am I? Oh, well ...</p>
     </div>
+  </div>
+  <div class="container flex flex-ai-c flex-jc-c">
+    <div class="skills">
+      <img src="/resources/img/Skils.png" alt="Skills">
+    </div>
+  </div>
 </body>
 </html>

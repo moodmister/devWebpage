@@ -3,6 +3,7 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -197,6 +198,11 @@ h2 {
 .paragraph {
   margin: 1.5rem;
   text-align: justify;
+}
+
+.skills img {
+  -webkit-animation: fade 0.5s;
+          animation: fade 0.5s;
 }
 
 @media screen and (max-width: 1024px) {
