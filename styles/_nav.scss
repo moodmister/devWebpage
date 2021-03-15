@@ -13,6 +13,7 @@ nav {
     padding: 10px 0;
   }
   .nav-item:hover{
+    cursor: pointer;
     background-color: #0073ff;
     color: $lt_font;
     transition: 0.5s;
@@ -47,20 +48,20 @@ nav {
 }
 
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 50px;
   z-index: 10;
-  width: 35vw;
+  width: 40vw;
   height: 0;
   overflow: hidden;
   transition: 0.5s;
   background-color: $dt_navbg;
   text-align: center;
-  a {
+  div {
       font-weight: 400;
       text-decoration: none;
-      margin: 1rem;
+      padding: 5vh 0;
       color: $dt_font;
   }
 }

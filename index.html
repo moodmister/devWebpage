@@ -22,11 +22,11 @@
         <div class="nav">
             <div class="navbar-items">
                 <div class="navbar flex flex-jc-sb flex-ai-c">
-                    <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Home</div></a>
-                    <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">About me</div></a>
-                    <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Skills</div></a>
-                    <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Projects</div></a>
-                    <a href="#"><div class="nav-item flex flex-jc-c flex-ai-c">Contacts</div></a>
+                    <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(0)">Home</div>
+                    <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(1)">About me</div>
+                    <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(2)">Skills</div>
+                    <div class="nav-item flex flex-jc-c flex-ai-c">Projects</div></a>
+                    <div class="nav-item flex flex-jc-c flex-ai-c">Contacts</div></a>
                     <div class="toggle-dm nav-item flex flex-jc-c flex-ai-c" id="dark-mode" onclick="DarkModeToggle()"><i id="moon" class="fas fa-moon" style="display: none;"></i><i id="sun" class="fas fa-sun"></i></div>
                 </div>
             </div>
@@ -39,11 +39,11 @@
     </nav>
     <div class="mobile-nav" id="mobile-menu">
         <div class="mobile-links">
-            <a href="#"><div class="mobile-link">Home</div></a>
-            <a href="#" onclick="ScrollTo(1)"><div class="mobile-link">About me</div></a>
-            <a href="#"><div class="mobile-link">Skills</div></a>
-            <a href="#"><div class="mobile-link">Projects</div></a>
-            <a href="#"><div class="mobile-link">Contacts</div></a>
+            <div class="mobile-link" onclick="ScrollTo(0); ShowMobileMenu()">Home</div>
+            <div class="mobile-link" onclick="ScrollTo(1); ShowMobileMenu()">About me</div>
+            <div class="mobile-link" onclick="ScrollTo(2); ShowMobileMenu()">Skills</div>
+            <div class="mobile-link">Projects</div>
+            <div class="mobile-link">Contacts</div>
             <div class="toggle-dm mobile-link" onclick="DarkModeToggle()"><i style="display: none;" class="fas fa-moon"></i><i class="fas fa-sun"></i></div>
         </div>
     </div>

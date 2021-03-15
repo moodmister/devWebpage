@@ -28,7 +28,6 @@ body {
 
 .lightMode {
     color: $lt_font;
-    background-image: none;
-    background-color: $lt_bg;
+    background-image: linear-gradient(to bottom right, $lt_bg2, $lt_bg1, $lt_bg1);
     transition: 0.5s;
 }

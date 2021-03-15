@@ -30,8 +30,8 @@ body {
 
 .lightMode {
   color: #000c1b;
-  background-image: none;
-  background-color: #d0fcf6;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#dbfdf9), color-stop(#d0fcf6), to(#d0fcf6));
+  background-image: linear-gradient(to bottom right, #dbfdf9, #d0fcf6, #d0fcf6);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -55,6 +55,7 @@ nav .nav-item {
 }
 
 nav .nav-item:hover {
+  cursor: pointer;
   background-color: #0073ff;
   color: #000c1b;
   -webkit-transition: 0.5s;
@@ -91,11 +92,11 @@ nav .hamburger-menu > span {
 }
 
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 50px;
   z-index: 10;
-  width: 35vw;
+  width: 40vw;
   height: 0;
   overflow: hidden;
   -webkit-transition: 0.5s;
@@ -104,10 +105,10 @@ nav .hamburger-menu > span {
   text-align: center;
 }
 
-.mobile-nav a {
+.mobile-nav div {
   font-weight: 400;
   text-decoration: none;
-  margin: 1rem;
+  padding: 5vh 0;
   color: #2be7ff;
 }
 
@@ -201,8 +202,7 @@ h2 {
 }
 
 .skills img {
-  -webkit-animation: fade 0.5s;
-          animation: fade 0.5s;
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
