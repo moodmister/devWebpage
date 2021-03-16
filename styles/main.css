@@ -30,8 +30,8 @@ body {
 
 .lightMode {
   color: #000c1b;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#dbfdf9), color-stop(#d0fcf6), to(#d0fcf6));
-  background-image: linear-gradient(to bottom right, #dbfdf9, #d0fcf6, #d0fcf6);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#dbfdf9), color-stop(#53ffe8), to(#53ffe8));
+  background-image: linear-gradient(to bottom right, #dbfdf9, #53ffe8, #53ffe8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
