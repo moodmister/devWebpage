@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Валентин Стоянов - биография</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/54fa9535b9.js" crossorigin="anonymous"></script>
+  <script src="scripts/main.js"></script>
+  <style>
+      body {
+          font-family: 'Source Code Pro';
+          font-weight: 200;
+      }
+      form input{
+        font-family: 'Source Code Pro';
+      }
+      form textarea {
+        font-family: 'Source Code Pro';
+      }
+  </style>
+</head>
+<body>
+  <nav id="nav">
+    <div class="nav">
+        <div class="navbar-items">
+            <div class="navbar flex flex-jc-sb flex-ai-c">
+                <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(0)">Home</div>
+                <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(1)">About me</div>
+                <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(2)">Skills</div>
+                <div class="nav-item flex flex-jc-c flex-ai-c">Projects</div></a>
+                <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(3)">Contacts</div></a>
+                <div class="toggle-dm nav-item flex flex-jc-c flex-ai-c" id="dark-mode" onclick="DarkModeToggle()"><i id="moon" class="fas fa-moon" style="display: none;"></i><i id="sun" class="fas fa-sun"></i></div>
+            </div>
+        </div>
+        <div class="hamburger-menu flex-jc-e" onclick="ShowMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+<div class="mobile-nav" id="mobile-menu">
+    <div class="mobile-links">
+        <div class="mobile-link" onclick="ScrollTo(0); ShowMobileMenu()">Home</div>
+        <div class="mobile-link" onclick="ScrollTo(1); ShowMobileMenu()">About me</div>
+        <div class="mobile-link" onclick="ScrollTo(2); ShowMobileMenu()">Skills</div>
+        <div class="mobile-link">Projects</div>
+        <div class="mobile-link" onclick="ScrollTo(3); ShowMobileMenu()">Contacts</div>
+        <div class="toggle-dm mobile-link" onclick="DarkModeToggle()"><i style="display: none;" class="fas fa-moon"></i><i class="fas fa-sun"></i></div>
+    </div>
+</div>
+</body>
+</html>
