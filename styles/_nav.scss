@@ -4,6 +4,7 @@ nav {
   background-color: $dt_navbg;
   position: fixed;
   top:0;
+  z-index: 1000;
   .navbar-items {
     height: 100%;
   }
@@ -51,7 +52,7 @@ nav {
   position: fixed;
   right: 0;
   top: 50px;
-  z-index: 10;
+  z-index: 1000;
   width: 40vw;
   height: 0;
   overflow: hidden;

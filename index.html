@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentin Stoyanov</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
     <link rel="stylesheet" href="styles/main.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/54fa9535b9.js" crossorigin="anonymous"></script>
-    <script src="scripts/main.js"></script>
+
     <style>
         body {
             font-family: 'Source Code Pro';
@@ -28,11 +31,11 @@
         <div class="nav">
             <div class="navbar-items">
                 <div class="navbar flex flex-jc-sb flex-ai-c">
-                    <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(0)">Home</div>
-                    <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(1)">About me</div>
-                    <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(2)">Skills</div>
-                    <div class="nav-item flex flex-jc-c flex-ai-c">Projects</div></a>
-                    <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(3)">Contacts</div></a>
+                    <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(0)">Начало</div>
+                    <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(1)">За мен</div>
+                    <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(2)">Умения</div>
+                    <div class="nav-item flex flex-jc-c flex-ai-c">Проекти</div></a>
+                    <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(3)">Контакти</div></a>
                     <div class="toggle-dm nav-item flex flex-jc-c flex-ai-c" id="dark-mode" onclick="DarkModeToggle()"><i id="moon" class="fas fa-moon" style="display: none;"></i><i id="sun" class="fas fa-sun"></i></div>
                 </div>
             </div>
@@ -45,11 +48,11 @@
     </nav>
     <div class="mobile-nav" id="mobile-menu">
         <div class="mobile-links">
-            <div class="mobile-link" onclick="ScrollTo(0); ShowMobileMenu()">Home</div>
-            <div class="mobile-link" onclick="ScrollTo(1); ShowMobileMenu()">About me</div>
-            <div class="mobile-link" onclick="ScrollTo(2); ShowMobileMenu()">Skills</div>
-            <div class="mobile-link">Projects</div>
-            <div class="mobile-link" onclick="ScrollTo(3); ShowMobileMenu()">Contacts</div>
+            <div class="mobile-link" onclick="ScrollTo(0); ShowMobileMenu()">Начало</div>
+            <div class="mobile-link" onclick="ScrollTo(1); ShowMobileMenu()">За мен</div>
+            <div class="mobile-link" onclick="ScrollTo(2); ShowMobileMenu()">Умения</div>
+            <div class="mobile-link">Проекти</div>
+            <div class="mobile-link" onclick="ScrollTo(3); ShowMobileMenu()">Контакти</div>
             <div class="toggle-dm mobile-link" onclick="DarkModeToggle()"><i style="display: none;" class="fas fa-moon"></i><i class="fas fa-sun"></i></div>
         </div>
     </div>
@@ -60,7 +63,7 @@
         <h2>Уеб дизайн и back-end разработка</h2>
     </div>
   </div>
-  <div class="container flex flex-ai-c paragraph">
+  <div class="container flex flex-ai-c">
     <div class="about-me headings">
       <h2>С какво се занимавам?</h2>
       <p>
@@ -75,7 +78,7 @@
         Извън работно време обръщам внимание на семейството и приятелите си. Голяма страст ми е музиката и по-конкретно китарата. Освен това членувам в скаутска организация като лидер.
       </p>
       <p>
-        Ако желаете да узнаете повече за мен, <a href="/bio.html">натиснете тук</a>.
+        Ако желаете да узнаете повече за мен, <a href="/bio.html"><button>натиснете тук</button></a>.
       </p>
     </div>
   </div>
@@ -84,16 +87,43 @@
       <img src="/resources/img/Skils.png" alt="Skills">
     </div>
   </div>
-  <div class="container flex flex-ai-c flex-jc-c">
-    <div class="contact-form">
+  <!-- <div class="container contacts flex flex-ai-c">
+    <div class="contact-form col-50">
       <form action="" method="post">
-        <input type="text" name="Name" id="name" placeholder="Your Name..."> <br>
-        <input type="text" name="email" id="email" placeholder="Your email address..."><br>
-        <input type="text" name="subject" id="subject" placeholder="Subject..."><br>
-        <textarea name="content" id="content" placeholder="I'm writing about..."></textarea><br>
-        <input id="button" type="submit" value="Send Email">
+        <input type="text" name="Name" id="name" placeholder="Вашето име..."> <br>
+        <input type="text" name="email" id="email" placeholder="Вашият имейл адрес..."><br>
+        <input type="text" name="subject" id="subject" placeholder="Тема..."><br>
+        <textarea name="content" id="content" placeholder="Здравейте, пиша относно..."></textarea><br>
+        <input id="button" type="submit" value="Изпращане">
       </form>
-      </div>
+    </div>
+    <div class="map col-50">
+      
+    </div>
+  </div> -->
+  <div class="container container-mobile flex flex-ai-c flex-jc-c">
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <form action="" method="post">
+              <input type="text" name="Name" id="name" placeholder="Вашето име..."> <br>
+              <input type="text" name="email" id="email" placeholder="Вашият имейл адрес..."><br>
+              <input type="text" name="subject" id="subject" placeholder="Тема..."><br>
+              <textarea name="content" id="content" placeholder="Здравейте, пиша относно..."></textarea><br>
+              <input id="button" type="submit" value="Изпращане">
+            </form>
+          </td>
+          <td>
+            <div id="mapid"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </body>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://kit.fontawesome.com/54fa9535b9.js" crossorigin="anonymous"></script>
+<script src="scripts/main.js"></script>
+
 </html>
