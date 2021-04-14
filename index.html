@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentin Stoyanov</title>
+    <title>Валентин Стоянов</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
@@ -16,7 +16,6 @@
     <style>
         body {
             font-family: 'Source Code Pro';
-            font-weight: 200;
         }
         form input{
           font-family: 'Source Code Pro';
@@ -34,7 +33,7 @@
                     <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(0)">Начало</div>
                     <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(1)">За мен</div>
                     <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(2)">Умения</div>
-                    <div class="nav-item flex flex-jc-c flex-ai-c">Проекти</div></a>
+                    <a href="/projects.html"><div class="nav-item flex flex-jc-c flex-ai-c">Проекти</div></a>
                     <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(3)">Контакти</div></a>
                     <div class="toggle-dm nav-item flex flex-jc-c flex-ai-c" id="dark-mode" onclick="DarkModeToggle()"><i id="moon" class="fas fa-moon" style="display: none;"></i><i id="sun" class="fas fa-sun"></i></div>
                 </div>
@@ -51,7 +50,7 @@
             <div class="mobile-link" onclick="ScrollTo(0); ShowMobileMenu()">Начало</div>
             <div class="mobile-link" onclick="ScrollTo(1); ShowMobileMenu()">За мен</div>
             <div class="mobile-link" onclick="ScrollTo(2); ShowMobileMenu()">Умения</div>
-            <div class="mobile-link">Проекти</div>
+            <a href="/projects.html"><div class="mobile-link">Проекти</div></a>
             <div class="mobile-link" onclick="ScrollTo(3); ShowMobileMenu()">Контакти</div>
             <div class="toggle-dm mobile-link" onclick="DarkModeToggle()"><i style="display: none;" class="fas fa-moon"></i><i class="fas fa-sun"></i></div>
         </div>
@@ -84,33 +83,29 @@
   </div>
   <div class="container flex flex-ai-c flex-jc-c">
     <div class="skills">
-      <img src="/resources/img/Skills.png" alt="Skills">
+      <h1>WIP</h1>
     </div>
   </div>
   <div class="container container-mobile flex flex-ai-c flex-jc-c">
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <form action="" method="post">
-              <input type="text" name="Name" id="name" placeholder="Вашето име..."> <br>
-              <input type="text" name="email" id="email" placeholder="Вашият имейл адрес..."><br>
-              <input type="text" name="subject" id="subject" placeholder="Тема..."><br>
-              <textarea name="content" id="content" placeholder="Здравейте, пиша относно..."></textarea><br>
-              <input id="button" type="submit" value="Изпращане">
-            </form>
-          </td>
-          <td>
-            <div id="mapid"></div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="w100 responsive-grid">
+      <div class="contact-form">
+        <form action="" method="post">
+          <input type="text" name="Name" id="name" placeholder="Вашето име..."> <br>
+          <input type="text" name="email" id="email" placeholder="Вашият имейл адрес..."><br>
+          <input type="text" name="subject" id="subject" placeholder="Тема..."><br>
+          <textarea name="content" id="content" placeholder="Здравейте, пиша относно..."></textarea><br>
+          <input id="button" type="submit" value="Изпращане">
+        </form>
+      </div>
+      <div class="map">  
+        <div id="mapid"></div>
+      </div>
+    </div>
   </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script src="https://kit.fontawesome.com/54fa9535b9.js" crossorigin="anonymous"></script>
 <script src="scripts/main.js"></script>
-
+<script src="scripts/MyLeaflet.js"></script>
 </html>

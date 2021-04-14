@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Source Code Pro';
+            font-weight: 200;
+        }
+        form input{
+          font-family: 'Source Code Pro';
+        }
+        form textarea {
+          font-family: 'Source Code Pro';
+        }
+    </style>
+  <title>Проекти - Валентин Стоянов</title>
+</head>
+<body>
+  <nav id="nav">
+    <div class="nav">
+        <div class="navbar-items">
+            <div class="navbar flex flex-jc-sb flex-ai-c">
+                <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(0)">Начало</div>
+                <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(1)">За мен</div>
+                <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(2)">Умения</div>
+                <a href="/projects.html"><div class="nav-item flex flex-jc-c flex-ai-c">Проекти</div></a>
+                <div class="nav-item flex flex-jc-c flex-ai-c" onclick="ScrollTo(3)">Контакти</div></a>
+                <div class="toggle-dm nav-item flex flex-jc-c flex-ai-c" id="dark-mode" onclick="DarkModeToggle()"><i id="moon" class="fas fa-moon" style="display: none;"></i><i id="sun" class="fas fa-sun"></i></div>
+            </div>
+        </div>
+        <div class="hamburger-menu flex-jc-e" onclick="ShowMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+<div class="mobile-nav" id="mobile-menu">
+    <div class="mobile-links">
+        <div class="mobile-link" onclick="ScrollTo(0); ShowMobileMenu()">Начало</div>
+        <div class="mobile-link" onclick="ScrollTo(1); ShowMobileMenu()">За мен</div>
+        <div class="mobile-link" onclick="ScrollTo(2); ShowMobileMenu()">Умения</div>
+        <a href="/projects.html"><div class="mobile-link">Проекти</div>
+        <div class="mobile-link" onclick="ScrollTo(3); ShowMobileMenu()">Контакти</div>
+        <div class="toggle-dm mobile-link" onclick="DarkModeToggle()"><i style="display: none;" class="fas fa-moon"></i><i class="fas fa-sun"></i></div>
+    </div>
+</div>
+
+  <div class="container flex flex-ai-c flex-jc-c">
+    <div class="responsive-grid w100">
+
+    </div>
+  </div>  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://kit.fontawesome.com/54fa9535b9.js" crossorigin="anonymous"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
