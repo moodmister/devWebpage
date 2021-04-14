@@ -46,6 +46,25 @@ nav {
   z-index: 1000;
 }
 
+nav .back-button {
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 25px;
+}
+
+nav .back-button i {
+  letter-spacing: 5px;
+}
+
+nav .back-button:hover {
+  background-color: #0073ff;
+}
+
 nav .navbar-items {
   height: 100%;
 }
@@ -172,6 +191,10 @@ nav .hamburger-menu > span {
   width: 100%;
 }
 
+.h100 {
+  height: 100%;
+}
+
 .inline {
   display: inline;
 }
@@ -185,6 +208,13 @@ nav .hamburger-menu > span {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+}
+
+.responsive-grid-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
 }
 
 .flex {
@@ -226,12 +256,34 @@ nav .hamburger-menu > span {
   width: 50%;
 }
 
-.headings {
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-img .headings {
   border-left: solid 2px;
   margin: 1.725rem;
   padding: 0 20px;
-  -webkit-animation: fadein 5s;
-          animation: fadein 5s;
+}
+
+.bg-img .headings h1 {
+  position: relative;
+}
+
+.bg-img::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 50vw;
+  background-image: url("/resources/img/my_picture.jpg");
+  background-size: cover;
+  background-position: -1000px right;
+  opacity: 0.20;
+  border-radius: 100% 25% 100% 25%;
 }
 
 .about-me {
@@ -309,13 +361,52 @@ a {
   overflow: hidden;
 }
 
+.footer {
+  padding: 20px 50px;
+  border-top: 10px solid #ffffff96;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.footer a {
+  position: relative;
+}
+
+.footer a::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #2be7ff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer a:hover::after {
+  width: 100%;
+}
+
 @media screen and (max-width: 1024px) {
   h1 {
     font-size: 4rem;
   }
+  .bg-img::before {
+    left: 0;
+  }
   .map {
     border: none;
     border-radius: 0;
+  }
+  .responsive-grid-3 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
   }
 }
 
@@ -325,6 +416,11 @@ a {
   }
   h2 {
     font-size: 2.5rem;
+  }
+  .container:last-of-type {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .contact-form form {
     width: 75vw;

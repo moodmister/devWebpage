@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+.h100 {
+  height: 100%;
+}
+
 .inline {
   display:inline;
 }
@@ -18,6 +22,11 @@
 .responsive-grid {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+
+.responsive-grid-3 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 
 .flex {
@@ -44,14 +53,32 @@
     width: 50%;
   }
 }
-
-.headings {
-  border-left: solid 2px;
-  margin: 1.725rem;
-  padding: 0 20px;
-  animation: fadein 5s;
+.bg-img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .headings {
+    border-left: solid 2px;
+    margin: 1.725rem;
+    padding: 0 20px;
+    h1 {
+      position: relative;
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 50vw;
+    background-image: url('/resources/img/my_picture.jpg');
+    background-size: cover;
+    background-position: -1000px right;
+    opacity: 0.20;
+    border-radius: 100% 25% 100% 25%;
+  }
 }
-
 .about-me {
   margin: 1.725rem;
 }
@@ -124,15 +151,50 @@ a {
   border-radius: 100%;
   overflow: hidden;
 }
+
+.footer {
+    padding: 20px 50px;
+    border-top: 10px solid #ffffff96;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+    a {
+      position: relative;
+    }
+    a::after {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 0%;
+      height: 2px;
+      background-color: $dt_font;
+      transition: 0.5s;
+    }
+    a:hover::after{
+      width:100%;
+    }
+}
 // Media Queries
 
 @media screen and (max-width: 1024px) {
     h1 {
         font-size: 4rem;
     }
+
+    .bg-img::before {
+      left: 0;
+    }
+
     .map {
       border: none;
       border-radius: 0;
+    }
+    .responsive-grid-3 {
+      grid-template-columns: auto;
     }
 }
 
@@ -143,6 +205,11 @@ a {
   h2 {
       font-size: 2.5rem;
   }
+
+  .container:last-of-type {
+    height: fit-content;
+  }
+
   .contact-form {
     form {
       width: 75vw;

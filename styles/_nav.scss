@@ -5,6 +5,19 @@ nav {
   position: fixed;
   top:0;
   z-index: 1000;
+  .back-button {
+    height: 100%;
+    width: fit-content;
+    padding: 0 5px;
+    transition: 0.5s;
+    font-size: 25px;
+    i {
+      letter-spacing: 5px;
+    }
+  }
+  .back-button:hover {
+    background-color: #0073ff;
+  }
   .navbar-items {
     height: 100%;
   }
