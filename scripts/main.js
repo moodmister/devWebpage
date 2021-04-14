@@ -1,3 +1,20 @@
+var $win = $(window);
+var $stat = $('.container'); // Change this to affect your desired element.
+
+$win.on('scroll', function () {
+    var scrollTop = $win.scrollTop();
+
+    $stat.each(function () {
+        var $self = $(this);
+        var prev = $self.offset();
+        if ( (scrollTop - prev.top) > -300) {
+          $self.css({"animation":"fadein 5s", "opacity":"1"});
+        }
+
+    });
+
+}).scroll();
+
 function ShowMobileMenu() {
     var obj = document.getElementById('mobile-menu');
     if (obj.style.height == '100%')

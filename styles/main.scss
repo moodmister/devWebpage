@@ -34,6 +34,7 @@
 
 .container {
   height: 100vh;
+  opacity: 0;
   .col-50 {
     width: 50%;
   }
@@ -45,6 +46,11 @@
   padding: 0 20px;
   animation: fadein 5s;
 }
+
+.about-me {
+  margin: 1.725rem;
+}
+
 h1, h2 {
     font-weight: 200;
 }

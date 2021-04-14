@@ -211,6 +211,7 @@ nav .hamburger-menu > span {
 
 .container {
   height: 100vh;
+  opacity: 0;
 }
 
 .container .col-50 {
@@ -223,6 +224,10 @@ nav .hamburger-menu > span {
   padding: 0 20px;
   -webkit-animation: fadein 5s;
           animation: fadein 5s;
+}
+
+.about-me {
+  margin: 1.725rem;
 }
 
 h1, h2 {
