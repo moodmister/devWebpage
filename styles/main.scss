@@ -100,6 +100,35 @@ a {
 }
 
 .skills {
+  .skill-list {
+    //background-color: #000000d0;
+    padding: 20px;
+    .skill{
+      padding: 10px;
+      font-size: 1.5rem;
+    }
+    .skill-progress-bar{
+      background-color: #00193f;
+      width: 100%;
+      height: 5px;
+      .skill-progress{
+        height: 100%;
+        background-color: $dt_font;
+      }
+      .html-progress{
+        width: 80%;
+      }
+      .css-progress{
+        width: 90%;
+      }
+      .php-progress {
+        width: 50%;
+      }
+      .js-progress {
+        width:30%;
+      }
+    }
+  }
   img {
     width: 100%;
   }

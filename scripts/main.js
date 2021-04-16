@@ -1,10 +1,10 @@
 var $win = $(window);
-var $stat = $('.container'); // Change this to affect your desired element.
+var $containers = $('.container'); // Change this to affect your desired element.
 
 $win.on('scroll', function () {
     var scrollTop = $win.scrollTop();
 
-    $stat.each(function () {
+    $containers.each(function () {
         var $self = $(this);
         var prev = $self.offset();
         if ( (scrollTop - prev.top) > -300) {
