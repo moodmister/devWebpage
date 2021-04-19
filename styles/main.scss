@@ -100,6 +100,9 @@ a {
 }
 
 .skills {
+  padding: 50px;
+  background-color: #00000052;
+  border-radius: 20px;
   .skill-list {
     //background-color: #000000d0;
     padding: 20px;
@@ -134,10 +137,6 @@ a {
   }
 }
 
-#mapid {
-  height: 100%;
-  width: 100%
-}
 .contacts {
   background-color: #00000052;
   border-radius: 15px;
@@ -146,6 +145,8 @@ a {
   form {
     padding: 2rem;
     width: 100%;
+    background-color: #00000052;
+    border-radius: 20px;
     input {
       border: none;
       padding: 5px;
@@ -179,6 +180,15 @@ a {
   border: 5px solid #0052b1c9;
   border-radius: 100%;
   overflow: hidden;
+  #mapid {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    .leaflet-control-zoom-in, .leaflet-control-zoom-out {
+      display: none;
+    }
+  }
 }
 
 .footer {
@@ -217,13 +227,18 @@ a {
     .bg-img::before {
       left: 0;
     }
-
-    .map {
-      border: none;
-      border-radius: 0;
-    }
     .responsive-grid-3 {
       grid-template-columns: auto;
+    }
+    .responsive-grid {
+      grid-template-columns: auto;
+      .map {
+        height: 500px;
+        border-radius: 0;
+        #mapid {
+          border-radius: 0;
+        }
+      }
     }
 }
 
@@ -237,18 +252,6 @@ a {
 
   .container:last-of-type {
     height: fit-content;
-  }
-
-  .contact-form {
-    form {
-      width: 75vw;
-    }
-  }
-  .responsive-grid {
-    grid-template-columns: auto;
-  }
-  .map {
-    height: 600px;
   }
 }
 

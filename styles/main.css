@@ -307,6 +307,12 @@ a {
   color: white;
 }
 
+.skills {
+  padding: 50px;
+  background-color: #00000052;
+  border-radius: 20px;
+}
+
 .skills .skill-list {
   padding: 20px;
 }
@@ -347,11 +353,6 @@ a {
   width: 100%;
 }
 
-#mapid {
-  height: 100%;
-  width: 100%;
-}
-
 .contacts {
   background-color: #00000052;
   border-radius: 15px;
@@ -360,6 +361,8 @@ a {
 .contact-form form {
   padding: 2rem;
   width: 100%;
+  background-color: #00000052;
+  border-radius: 20px;
 }
 
 .contact-form form input {
@@ -395,6 +398,17 @@ a {
   border: 5px solid #0052b1c9;
   border-radius: 100%;
   overflow: hidden;
+}
+
+.map #mapid {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.map #mapid .leaflet-control-zoom-in, .map #mapid .leaflet-control-zoom-out {
+  display: none;
 }
 
 .footer {
@@ -436,13 +450,20 @@ a {
   .bg-img::before {
     left: 0;
   }
-  .map {
-    border: none;
-    border-radius: 0;
-  }
   .responsive-grid-3 {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+  }
+  .responsive-grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .responsive-grid .map {
+    height: 500px;
+    border-radius: 0;
+  }
+  .responsive-grid .map #mapid {
+    border-radius: 0;
   }
 }
 
@@ -457,16 +478,6 @@ a {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-  }
-  .contact-form form {
-    width: 75vw;
-  }
-  .responsive-grid {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  .map {
-    height: 600px;
   }
 }
 
