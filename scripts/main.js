@@ -26,6 +26,7 @@ function ShowMobileMenu() {
 function DarkModeToggle() {
     document.body.classList.toggle("lightMode");
     document.getElementById("nav").classList.toggle("lightMode-nav");
+    document.getElementById('email-link').classList.toggle("lightMode");
 
     var moon = document.getElementsByClassName("fa-moon");
     var sun = document.getElementsByClassName("fa-sun");
