@@ -44,6 +44,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 1000;
+  text-shadow: 0 0 1rem;
 }
 
 nav .back-button {
@@ -62,7 +63,7 @@ nav .back-button i {
 }
 
 nav .back-button:hover {
-  background-color: #0073ff;
+  background-color: #003cff;
 }
 
 nav .navbar-items {
@@ -77,8 +78,7 @@ nav .nav-item {
 
 nav .nav-item:hover {
   cursor: pointer;
-  background-color: #0073ff;
-  color: #000c1b;
+  background-color: #00155c;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

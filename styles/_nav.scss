@@ -5,6 +5,7 @@ nav {
   position: fixed;
   top:0;
   z-index: 1000;
+  text-shadow: 0 0 1rem;
   .back-button {
     height: 100%;
     width: fit-content;
@@ -16,7 +17,7 @@ nav {
     }
   }
   .back-button:hover {
-    background-color: #0073ff;
+    background-color: #003cff;
   }
   .navbar-items {
     height: 100%;
@@ -28,8 +29,7 @@ nav {
   }
   .nav-item:hover{
     cursor: pointer;
-    background-color: #0073ff;
-    color: $lt_font;
+    background-color: #00155c;
     transition: 0.5s;
   }
   a {
