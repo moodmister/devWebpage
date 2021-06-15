@@ -361,8 +361,7 @@ a {
 .contact-form form {
   padding: 2rem;
   width: 100%;
-  background-color: #7a7a7a;
-  border-radius: 50px 0 0 50px;
+  background-color: #00114150;
 }
 
 .contact-form form input {
@@ -401,7 +400,6 @@ a {
 .map #mapid {
   height: 100%;
   width: 100%;
-  border-radius: 0 50px 50px 0;
   overflow: hidden;
 }
 
