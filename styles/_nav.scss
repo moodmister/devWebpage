@@ -4,7 +4,7 @@ nav {
   background-color: $dt_navbg;
   position: fixed;
   top:0;
-  z-index: 1000;
+  z-index: 10000;
   text-shadow: 0 0 1rem;
   .back-button {
     height: 100%;

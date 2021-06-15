@@ -43,7 +43,7 @@ nav {
   background-color: #00152e;
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 10000;
   text-shadow: 0 0 1rem;
 }
 
